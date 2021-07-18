@@ -11,7 +11,7 @@ func TestMake_URL_by_index(t *testing.T) {
 	}
 	test_data := []T1{
 		T1{k1: "http://example.com/imgs/*.jpg", k2: 1, v: "http://example.com/imgs/1.jpg"},
-		T1{k1: "http://example.com/imgs/***.jpg", k2: 0, v: "http://example.com/imgs/1.jpg"},
+		T1{k1: "http://example.com/imgs/***.jpg", k2: 1, v: "http://example.com/imgs/1.jpg"},
 	}
 
 	for _, e := range test_data {
