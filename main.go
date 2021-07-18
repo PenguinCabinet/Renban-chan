@@ -28,19 +28,19 @@ func main() {
 
 	app := &cli.App{
 		Name: "Renban-chan",
+		Flags: []cli.Flag{
+			&cli.BoolFlag{
+				Name:    "izp",
+				Aliases: []string{"z"},
+				Value:   false,
+				Usage:   "Index of zero padding",
+			},
+		},
 		Commands: []*cli.Command{
 			{
 				Name:    "Interactive-mode",
 				Aliases: []string{"i"},
 				Usage:   "Interactive mode.",
-				Flags: []cli.Flag{
-					&cli.BoolFlag{
-						Name:    "izp",
-						Aliases: []string{"z"},
-						Value:   false,
-						Usage:   "Index of zero padding",
-					},
-				},
 				Action: func(c *cli.Context) error {
 					root_path := ""
 					if c.Args().Len() >= 1 {
