@@ -19,6 +19,11 @@ func Input_str(Q string) string {
 	return scanner.Text()
 }
 
+func file_exit(path string) bool {
+	_, err := os.Stat(path)
+	return err == nil
+}
+
 func main() {
 
 	app := &cli.App{
@@ -38,6 +43,13 @@ func main() {
 				},
 				Action: func(c *cli.Context) error {
 					root_path := ""
+					if c.Args().Len() >= 1 {
+						root_path = c.Args().Get(0)
+					}
+					if !file_exit(root_path) {
+						os.Mkdir(root_path, 0777)
+					}
+
 					URL_template := Input_str("URL template(http://example.com/imgs/**.jpg):")
 
 					S_index_s := Input_str("Start index:")
