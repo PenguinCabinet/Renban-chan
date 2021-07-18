@@ -12,7 +12,6 @@ import (
 
 func Input_str(Q string) string {
 	fmt.Print(Q)
-	// Scannerを使って一行読み
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 
