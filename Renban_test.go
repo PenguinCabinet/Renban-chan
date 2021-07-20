@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMake_URL_by_index(t *testing.T) 
+func TestMake_URL_by_index(t *testing.T) {
 	type T1 struct {
 		k1, v string
 		k2    int
