@@ -1,10 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 )
 
-func TestMake_URL_by_index(t *testing.T) {
+func TestMake_URLby_index(t *testing.T) {
 	type T1 struct {
 		k1, v string
 		k2    int
@@ -20,5 +21,8 @@ func TestMake_URL_by_index(t *testing.T) {
 			t.Errorf("err %s %d->%s  But %s", e.k1, e.k2, e.v, result)
 		}
 	}
+}
 
+func TestDownload_list_by_HTML(t *testing.T) {
+	fmt.Printf("%v\n", download_list_by_HTML("https://www.google.com/search?q=%E7%8C%AB"))
 }
