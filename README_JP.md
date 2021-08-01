@@ -9,7 +9,7 @@
 
 ## 連続したURLからファイルをダウンロード
 
-"http://example.com/"から1.jpg~6.jpgをダウンロードします。
+"http://example.com/" から1.jpg~6.jpgをダウンロードします。
 
 ```shell
 /home/yours> Renban-chan i
