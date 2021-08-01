@@ -48,7 +48,7 @@ downloading http://example.com/imgs/6.jpg
 
 ## How to download files in the homepage
 
-"http://example.com/home.html"のすべての画像ファイルをダウンロードします。
+"http://example.com/home.html" のすべての画像ファイルをダウンロードします。
 
 ```shell
 /home/yours> Renban-chan ia pictures
