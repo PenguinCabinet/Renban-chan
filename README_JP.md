@@ -1,14 +1,15 @@
 # Renban-chan
-[日本語版README](README_JP.md)\
-The cli tool downloading files by continuous URL. \
-[download](https://github.com/PenguinCabinet/Renban-chan/releases/latest)
+* このツールは連続したURLから画像をダウンロードすることができます。
+* このツールはページに乗っている画像をすべてダウンロードできます。
+* このツールはCLIツールです。
 
+[ダウンロード](https://github.com/PenguinCabinet/Renban-chan/releases/latest)
 
 # Get started
 
-## How to download files by continuous URL
+## 連続したURLからファイルをダウンロード
 
-In example,It is downloading files,1.jpg~6.jpg, by "http://example.com/".
+"http://example.com/"から1.jpg~6.jpgをダウンロードします。
 
 ```shell
 /home/yours> Renban-chan i
@@ -23,7 +24,7 @@ downloading http://example.com/imgs/5.jpg
 downloading http://example.com/imgs/6.jpg
 ```
 
-It is making a directory and downloading into it.
+ディレクトリを作り、指定したうえでダウンロードすることもできます。
 
 ```shell
 /home/yours> Renban-chan i pictures
@@ -47,7 +48,7 @@ downloading http://example.com/imgs/6.jpg
 
 ## How to download files in the homepage
 
-In example,It is downloading files of pictures in "http://example.com/home.html".
+"http://example.com/home.html"のすべての画像ファイルをダウンロードします。
 
 ```shell
 /home/yours> Renban-chan ia pictures
@@ -60,3 +61,4 @@ downloading http://example.com/imgs/HAPPY.jpg
 2.jpg
 3.jpg
 ```
+
