@@ -37,10 +37,16 @@ func main() {
 				Usage:   "Index of zero padding",
 			},
 			&cli.IntFlag{
-				Name:    "w",
-				Aliases: []string{"wait"},
+				Name:    "wait",
+				Aliases: []string{"w"},
 				Value:   100,
 				Usage:   "Wait time of downloading(ms).",
+			},
+			&cli.IntFlag{
+				Name:    "fsh",
+				Aliases: []string{"filter-size-height"},
+				Value:   100,
+				Usage:   "Filtering the height size of downloading pictures.",
 			},
 		},
 		Commands: []*cli.Command{

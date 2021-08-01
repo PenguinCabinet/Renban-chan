@@ -41,3 +41,19 @@ downloading http://example.com/imgs/6.jpg
 5.jpg
 6.jpg
 ```
+
+## How to download files in the homepage
+
+In example,It is downloading files of pictures in "http://example.com/home.html".
+
+```shell
+/home/yours> Renban-chan ia pictures
+URL(http://example.com/home.html):http://example.com/home.html
+downloading http://example.com/imgs/Apple.jpg
+downloading http://example.com/imgs/BANANA.jpg
+downloading http://example.com/imgs/HAPPY.jpg
+/home/yours> ls pictures
+1.jpg
+2.jpg
+3.jpg
+```
