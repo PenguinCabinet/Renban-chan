@@ -1,6 +1,6 @@
 # Renban-chan
 * このツールは連続したURLから画像をダウンロードすることができます。
-* このツールはページに乗っている画像をすべてダウンロードできます。
+* このツールはWEBページに乗っている画像をすべてダウンロードできます。
 * このツールはCLIツールです。
 
 [ダウンロード](https://github.com/PenguinCabinet/Renban-chan/releases/latest)
@@ -24,7 +24,7 @@ downloading http://example.com/imgs/5.jpg
 downloading http://example.com/imgs/6.jpg
 ```
 
-ディレクトリを作り、指定したうえでダウンロードすることもできます。
+ディレクトリを作り、指定したうえでそこにダウンロードすることもできます。
 
 ```shell
 /home/yours> Renban-chan i pictures
@@ -46,7 +46,7 @@ downloading http://example.com/imgs/6.jpg
 6.jpg
 ```
 
-## How to download files in the homepage
+## WEBページのすべての画像ファイルをダウンロード
 
 "http://example.com/home.html" のすべての画像ファイルをダウンロードします。
 
